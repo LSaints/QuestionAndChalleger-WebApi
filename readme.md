@@ -1,11 +1,9 @@
 # QuestionAndChallenger
 
- Este repositorio abriga uma API simples em .NET para executar operações CRUD
+ Este repositorio abriga uma API simples em .NET para executar operaÃ§Ãµes CRUD
 em uma entidade chamada "Question". 
 
-A entidade "Question" é definida por três campos principais: "description", "level" e "category". 
-
-Incluindo também um painel de administração construído com Angular. Esse painel consome a API mencionada, fornecendo uma interface amigável para administradores gerenciarem as perguntas. Com funcionalidades de visualização, edição e exclusão, o painel agiliza o gerenciamento das perguntas e categorias.
+A entidade "Question" Ã© definida por trÃªs campos principais: "description", "level" e "category". 
 
 Algumas das tecnologias adotadas:
 
@@ -14,7 +12,3 @@ Algumas das tecnologias adotadas:
 + C#
 + SQL Server
 + XUnit
-+ HTML
-+ TypeScript
-+ Angular
-+ Css
