@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuestionAndChalleger.Data;
 
@@ -10,9 +11,10 @@ using QuestionAndChalleger.Data;
 namespace QuestionAndChalleger.Data.Migrations
 {
     [DbContext(typeof(QuestionAndChallegerContext))]
-    partial class QuestionAndChallegerContextModelSnapshot : ModelSnapshot
+    [Migration("20230825132632_Add_Users_To_Database")]
+    partial class Add_Users_To_Database
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

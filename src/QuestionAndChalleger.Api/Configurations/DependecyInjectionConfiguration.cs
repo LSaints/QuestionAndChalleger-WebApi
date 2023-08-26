@@ -11,6 +11,9 @@ namespace QuestionAndChalleger.Api.Configurations
         {
             services.AddScoped<IQuestionRepository, QuestionRepository>();
             services.AddScoped<IQuestionManager, QuestionManager>();
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserManager, UserManager>();
         }
     }
 }

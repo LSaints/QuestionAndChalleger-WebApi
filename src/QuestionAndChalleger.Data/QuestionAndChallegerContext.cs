@@ -7,6 +7,7 @@ namespace QuestionAndChalleger.Data
     public class QuestionAndChallegerContext : DbContext
     {
         public DbSet<Question> Questions { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public QuestionAndChallegerContext(DbContextOptions<QuestionAndChallegerContext> options) 
             : base(options)
