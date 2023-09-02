@@ -25,6 +25,7 @@ Algumas das tecnologias adotadas:
 + Adicionar nova Pergunta/Desafio:
   ![cap2](https://github.com/LSaints/QuestionAndChalleger-WebApplication/assets/132153413/98802832-3742-4f33-aa66-b2a099b6a1db)
 + Detalhes:
+ 
   ![cap3](https://github.com/LSaints/QuestionAndChalleger-WebApplication/assets/132153413/fd1a757c-41d4-4861-a923-80f9cb821f54)
 
 
