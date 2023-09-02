@@ -17,4 +17,4 @@ Algumas das tecnologias adotadas:
 + TypeScript
 + Angular
 + HTML
-+ CSS
+
