@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuestionAndChalleger.Domain.Entities;
 using QuestionAndChalleger.Manager.Interfaces.Manager;
 
@@ -37,6 +38,7 @@ namespace QuestionAndChalleger.Api.Controllers
 
         // PUT api/<QuestionController>/5
         [HttpPut]
+        [Authorize]
         public async Task<ActionResult> Put([FromBody] Question entity)
         {
             var entityUpdate = await _manager.UpdateAsync(entity);
@@ -49,6 +51,7 @@ namespace QuestionAndChalleger.Api.Controllers
 
         // DELETE api/<QuestionController>/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<ActionResult> Delete(int id)
         {
             await _manager.DeleteAsync(id);

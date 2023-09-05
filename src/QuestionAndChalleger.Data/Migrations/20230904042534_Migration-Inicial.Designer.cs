@@ -11,14 +11,14 @@ using QuestionAndChalleger.Data;
 namespace QuestionAndChalleger.Data.Migrations
 {
     [DbContext(typeof(QuestionAndChallegerContext))]
-    [Migration("20230825132632_Add_Users_To_Database")]
-    partial class Add_Users_To_Database
+    [Migration("20230904042534_Migration-Inicial")]
+    partial class MigrationInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.20")
+                .HasAnnotation("ProductVersion", "6.0.21")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -61,6 +61,10 @@ namespace QuestionAndChalleger.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

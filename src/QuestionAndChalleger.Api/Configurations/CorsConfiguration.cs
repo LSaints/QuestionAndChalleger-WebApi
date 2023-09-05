@@ -4,18 +4,12 @@ namespace QuestionAndChalleger.Api.Configurations
 {
     public static class CorsConfiguration
     {
-        public static void UseCorsConfiguration(this IServiceCollection services)
+        public static void UseCorsConfiguration(this IApplicationBuilder app)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy(name: "*",
-                                  policy =>
-                                  {
-                                      policy.WithOrigins("http://localhost:4200")
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader();
-                                  });
-            });
+            app.UseCors(builder => builder
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin());
         }
     }
 }

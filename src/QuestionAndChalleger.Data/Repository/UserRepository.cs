@@ -33,7 +33,16 @@ namespace QuestionAndChalleger.Data.Repository
         public async Task<User> GetByIdAsync(int id)
         {
             return await _context.Users
-                .AsNoTracking().FirstOrDefaultAsync();
+                .FindAsync(id);
+        }
+
+        public async Task<User> GetByLogin(string name, string password)
+        {
+            string sql = $"SELECT * FROM dbo.Users WHERE Name = '{name}' AND Password = '{password}'";
+            return await _context.Users
+                .FromSqlRaw(sql)
+                .AsNoTracking()
+                .FirstOrDefaultAsync();
         }
 
         public async Task<User> InsertAsync(User entity)

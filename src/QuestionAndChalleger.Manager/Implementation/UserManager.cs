@@ -12,7 +12,6 @@ namespace QuestionAndChalleger.Manager.Implementation
             _userRepository = userRepository;
         }
 
-
         public async Task DeleteAsync(int id)
         {
             await _userRepository.DeleteAsync(id);
@@ -26,6 +25,11 @@ namespace QuestionAndChalleger.Manager.Implementation
         public Task<User> GetByIdAsync(int id)
         {
             return _userRepository.GetByIdAsync(id);
+        }
+
+        public async Task<User> GetByLogin(string name, string password)
+        {
+            return await _userRepository.GetByLogin(name, password);
         }
 
         public Task<User> InsertAsync(User entity)

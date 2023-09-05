@@ -32,8 +32,7 @@ namespace QuestionAndChalleger.Data.Repository
 
         public async Task<Question> GetByIdAsync(int id)
         {
-            return await _context.Questions
-                .AsNoTracking().FirstOrDefaultAsync();
+            return await _context.Questions.FindAsync(id);
         }
 
         public async Task<Question> InsertAsync(Question entity)

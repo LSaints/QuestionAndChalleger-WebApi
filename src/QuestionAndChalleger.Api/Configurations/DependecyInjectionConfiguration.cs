@@ -1,7 +1,9 @@
 ﻿using QuestionAndChalleger.Data.Repository;
+using QuestionAndChalleger.Data.Services;
 using QuestionAndChalleger.Manager.Implementation;
 using QuestionAndChalleger.Manager.Interfaces.Manager;
 using QuestionAndChalleger.Manager.Interfaces.Repository;
+using QuestionAndChalleger.Manager.Interfaces.Services;
 
 namespace QuestionAndChalleger.Api.Configurations
 {
@@ -14,6 +16,8 @@ namespace QuestionAndChalleger.Api.Configurations
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserManager, UserManager>();
+
+            services.AddScoped<ITokenServices, TokenServices>();
         }
     }
 }

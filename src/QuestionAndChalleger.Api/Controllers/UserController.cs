@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuestionAndChalleger.Domain.Entities;
 using QuestionAndChalleger.Manager.Interfaces.Manager;
 

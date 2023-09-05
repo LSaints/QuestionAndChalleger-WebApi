@@ -2,17 +2,17 @@ using QuestionAndChalleger.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
+builder.Services.UseAuthConfiguration(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
 builder.Services.UseDependecyInjectionConfiguration();
-builder.Services.UseCorsConfiguration();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
-app.UseCors("*");
+app.UseCorsConfiguration();
 app.UseSwaggerConfiguration();
 app.UseHttpsRedirection();
 app.UseAuthorization();
