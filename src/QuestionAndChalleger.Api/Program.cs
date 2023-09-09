@@ -15,6 +15,7 @@ var app = builder.Build();
 app.UseCorsConfiguration();
 app.UseSwaggerConfiguration();
 app.UseHttpsRedirection();
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseDatabaseConfiguration();
 app.MapControllers();

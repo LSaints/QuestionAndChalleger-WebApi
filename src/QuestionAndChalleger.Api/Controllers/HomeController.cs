@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using QuestionAndChalleger.Domain.Entities;
 using QuestionAndChalleger.Manager.Interfaces.Manager;
 using QuestionAndChalleger.Manager.Interfaces.Services;
+using System.Security.Claims;
 
 namespace QuestionAndChalleger.Api.Controllers
 {
@@ -36,6 +37,13 @@ namespace QuestionAndChalleger.Api.Controllers
                 entity = entity,
                 token = token,
             };
+        }
+        [HttpGet]
+        [Route("auth")]
+        [Authorize]
+        public async Task<ActionResult<dynamic>> GetUserInLogin()
+        {
+            return User.FindFirstValue(ClaimTypes.Role);
         }
     }
 }

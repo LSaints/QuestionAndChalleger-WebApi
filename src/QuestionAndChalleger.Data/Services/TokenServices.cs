@@ -23,7 +23,6 @@ namespace QuestionAndChalleger.Data.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim("Id", user.Id.ToString()),
                     new Claim(ClaimTypes.Name, user.Name.ToString()),
                     new Claim(ClaimTypes.Role, user.Role.ToString()),
                 }),
