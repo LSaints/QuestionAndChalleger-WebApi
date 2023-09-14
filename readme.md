@@ -14,19 +14,3 @@ Algumas das tecnologias adotadas:
 + C#
 + SQL Server
 + XUnit
-+ TypeScript
-+ Angular
-+ HTML
-
-### Imagens:
-
-+ Listagem:
-  ![cap1](https://github.com/LSaints/QuestionAndChalleger-WebApplication/assets/132153413/bb74ebd1-1df9-4b64-8c0c-4f9a2834e3d7)
-+ Adicionar nova Pergunta/Desafio:
-  ![cap2](https://github.com/LSaints/QuestionAndChalleger-WebApplication/assets/132153413/98802832-3742-4f33-aa66-b2a099b6a1db)
-+ Detalhes:
- 
-  ![cap3](https://github.com/LSaints/QuestionAndChalleger-WebApplication/assets/132153413/fd1a757c-41d4-4861-a923-80f9cb821f54)
-
-
-  
