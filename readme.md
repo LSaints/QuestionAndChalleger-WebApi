@@ -5,8 +5,6 @@ em uma entidade chamada "Question".
 
 A entidade "Question" é definida por três campos principais: "description", "level" e "category". 
 
-Incluindo também um painel de administração construído com Angular. Esse painel consome a API mencionada, fornecendo uma interface amigável para administradores gerenciarem as perguntas. Com funcionalidades de visualização, edição e exclusão, o painel agiliza o gerenciamento das perguntas e categorias.
-
 Algumas das tecnologias adotadas:
 
 + ASP.NET CORE API
@@ -14,3 +12,13 @@ Algumas das tecnologias adotadas:
 + C#
 + SQL Server
 + XUnit
+
+
+JSON de Question:
+
+{
+   "id": 0,
+   "description": "string",
+   "level": 0, onde 0 = "soft", 1 = "moderate", 2 = "hot"
+   "category": 0 onde 0 = "question", 1 = "challeger"
+}
