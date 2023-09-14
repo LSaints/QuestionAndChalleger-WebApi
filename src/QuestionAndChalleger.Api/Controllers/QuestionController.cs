@@ -7,6 +7,7 @@ namespace QuestionAndChalleger.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class QuestionController : ControllerBase
     {
         private readonly IQuestionManager _manager;
