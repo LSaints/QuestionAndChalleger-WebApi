@@ -19,8 +19,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuestionAndChalleger.Data.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuestionAndChalleger.FakeData", "tests\QuestionAndChalleger.FakeData\QuestionAndChalleger.FakeData.csproj", "{A544ED99-2260-43F6-A79B-3CE4E3C79976}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "QuestionAndChalleger.WebClient", "src\QuestionAndChalleger.WebClient\QuestionAndChalleger.WebClient.esproj", "{188D811E-416E-471F-A6E0-8B5094D42CD9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,12 +49,6 @@ Global
 		{A544ED99-2260-43F6-A79B-3CE4E3C79976}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A544ED99-2260-43F6-A79B-3CE4E3C79976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A544ED99-2260-43F6-A79B-3CE4E3C79976}.Release|Any CPU.Build.0 = Release|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{188D811E-416E-471F-A6E0-8B5094D42CD9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,7 +60,6 @@ Global
 		{C252C09B-A569-47AF-B5E4-9CF306F98C08} = {2C3500ED-BF6A-43A3-ADEE-28E6BF193542}
 		{20FC7D06-67F8-486D-B894-1B05380E010C} = {01F55A35-B745-494E-8872-DA9F3BBE0C06}
 		{A544ED99-2260-43F6-A79B-3CE4E3C79976} = {01F55A35-B745-494E-8872-DA9F3BBE0C06}
-		{188D811E-416E-471F-A6E0-8B5094D42CD9} = {2C3500ED-BF6A-43A3-ADEE-28E6BF193542}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5CC872FC-5AB5-4342-893F-A8A1DD223139}
