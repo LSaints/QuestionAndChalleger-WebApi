@@ -1,0 +1,27 @@
+version: '3.4'
+
+networks:
+  myAppNetwork:
+
+
+services:
+  SqlServerDb:
+    container_name: SqlServerContainer 
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+        - 8002:1433
+    environment:
+        - ACCEPT_EULA=Y
+        - MSSQL_SA_PASSWORD=Numsey#2022
+
+  questionandchalleger.api:
+    container_name: WebApiContainer
+    image: ${DOCKER_REGISTRY-}questionandchallegerapi
+    ports:
+        - 8001:80
+    build:
+      context: .
+      dockerfile: src/QuestionAndChalleger.Api/Dockerfile
+    depends_on:
+        - SqlServerDb
+

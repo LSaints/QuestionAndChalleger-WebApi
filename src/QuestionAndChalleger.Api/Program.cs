@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.UseAuthConfiguration(builder.Configuration);
 builder.Services.AddCorsConfiguration();
+builder.Services.UseDataProtectionConfiguration();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
