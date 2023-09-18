@@ -3,7 +3,6 @@ version: '3.4'
 networks:
   myAppNetwork:
 
-
 services:
   SqlServerDb:
     container_name: SqlServerContainer 
