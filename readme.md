@@ -19,6 +19,8 @@ JSON de Question:
 {
    "id": 0,
    "description": "string",
-   "level": 0, onde 0 = "soft", 1 = "moderate", 2 = "hot"
-   "category": 0 onde 0 = "question", 1 = "challeger"
-}
+   "level": 0, 
+   "category": 0 
+} 
++ onde level = 0 = "soft", 1 = "moderate", 2 = "hot"
++ onde category = 0 = "question", 1 = "challeger"
