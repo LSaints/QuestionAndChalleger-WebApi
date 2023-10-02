@@ -22,5 +22,5 @@ JSON de Question:
    "level": 0, 
    "category": 0 
 } 
-+ onde level = 0 = "soft", 1 = "moderate", 2 = "hot"
-+ onde category = 0 = "question", 1 = "challeger"
++ onde level -> 0 = "soft", 1 = "moderate", 2 = "hot"
++ onde category -> 0 = "question", 1 = "challeger"
